@@ -19,6 +19,7 @@ To write a program to implement the the Logistic Regression Model to Predict the
 ## Program:
 
 Developed by: THARUN K
+
 RegisterNumber:  212222040172
 
 import pandas as pd
