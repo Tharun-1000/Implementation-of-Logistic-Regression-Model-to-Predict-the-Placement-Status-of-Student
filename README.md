@@ -8,17 +8,19 @@ To write a program to implement the the Logistic Regression Model to Predict the
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1.Import the standard libraries.
+2.Upload the dataset and check for any null or duplicated values using .isnull() and .duplicated() function respectively.
+3.Import LabelEncoder and encode the dataset.
+4.Import LogisticRegression from sklearn and apply the model on the dataset. 
+5.Predict the values of array. 
+6.Calculate the accuracy, confusion and classification report by importing the required modules from sklearn.
+7.Apply new unknown values 
 
 ## Program:
-```
-/*
-Program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
+
 Developed by: THARUN K
 RegisterNumber:  212222040172
+
 import pandas as pd
 data=pd.read_csv('/content/Placement_Data.csv')
 data.head()
@@ -72,22 +74,66 @@ print(classification_report)
 
 lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]])
 
-*/
-```
+
 
 ## Output:
-![the Logistic Regression Model to Predict the Placement Status of Student](sam.png)
-![271912178-db957f74-baeb-4d5b-af90-6fb6cffbcc2e](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/eeb1e7dc-ac3e-4294-8870-4bcd5896e2bf)
-![271912273-d0e8e5ba-b389-4a6d-aca7-0d8921c68f0e](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/95009b4b-1e5e-457e-bd5c-140e1b7c4378)
-![271912302-f9ee445f-723f-4bcb-af64-4c6650794984](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/baf9c120-1c45-4b4f-90fd-e3652a27abcb)
-![271912327-87fac85d-e25d-4e1c-ae8b-decfc06152e1](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/85665afe-b3b2-40e7-9679-c995e95d23b8)
-![271912364-c222bd91-15f3-4c2f-808c-d0bf5c570b26](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/923a17a8-bd92-4e56-8251-1871374f6225)
-![271912424-6e23680a-570b-410b-b5bf-eb00cd489689](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/d869b368-651a-4051-90ee-33cec5d79666)
-![271912456-f6d4f7b6-81a7-41d5-a1c9-4cbc08cb17fa](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/5897de4f-9583-43e5-b222-e10af4237398)
-![271912498-4cfde0fa-6aae-4184-bb3f-d057535f10b2](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/44674e8d-c62c-4078-9758-2bf36569b8b9)
-![271912524-34c167a6-c0e3-4ca5-b327-90d703c82914](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/cbb0b7a9-7885-4bad-a2ed-a7b92a25fc75)
 
-![271912555-24d607e0-5123-4808-9253-58a1d8b5d80f](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/924d996f-e3be-46d5-80c6-a9175241c53c)
+1.Placement Data
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/977247be-6200-4a6a-a27d-629dc9886e5c)
+
+2.Salary Data
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/db6bac71-f9a4-4b5d-b296-24bb955d14b0)
+
+3.Checking the null() function
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/b81001fb-29ed-4499-88e3-e132552bb277)
+
+4.Data Duplicate
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/2fe0a4e9-87ae-40e2-8e51-d384a9d80692)
+
+5.Print Data
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/59c00845-b07e-4bb1-bb4c-d078926372dc)
+
+6.Data-status
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/8e7f1cec-6d23-4ffa-9cd0-4b77d18dc471)
+
+7.y_prediction array
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/a0b338cc-35bf-467e-ab96-48e7ddf51975)
+
+8.Accuracy Value
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/23ae429f-29e6-494d-ae89-9b6698392b8c)
+
+9.Confusion Array
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/fcd3ce67-4534-4a58-a38d-ac8fe61f4b4c)
+
+10.Classification Report
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/038d99c5-150b-474a-8bb7-3f5e2a2836a1)
+
+11.Prediction of LR
+
+![image](https://github.com/Tharun-1000/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/135952958/886a6912-0e59-4204-b71c-11eb52c90aac)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
